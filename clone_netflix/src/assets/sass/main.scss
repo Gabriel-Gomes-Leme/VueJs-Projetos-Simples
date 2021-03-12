@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import '../../../node_modules/bootstrap/dist/css/bootstrap.css';
+@import '../../../node_modules/@fortawesome/fontawesome-free/css/all.css';
+@import 'variables';
+
+.btn{
+    transition: all 0.2s ease !important;
+}
+.btn:hover{
+    opacity: .8 !important;
+    transform: scale(0.96) !important;
+}
+.btn-primary{
+    background-color: #fff !important;
+    border-color: #fff !important;
+    color: #000 !important;
+}
+.btn-danger{
+    background-color: #333 !important;
+    border-color: #333 !important;
+    color: #fff !important;
+}
