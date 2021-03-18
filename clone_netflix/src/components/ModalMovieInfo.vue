@@ -3,6 +3,8 @@
       <h2>{{movie.name}}</h2>
       <h3 class="mt-2"> Sinopse </h3>
       <span class="mt-2">{{movie.overview}}</span>
+      <p class="mt-2">Vote Average: {{movie.vote_average}}</p>
+      <p class="mt-1">Popularidade: {{movie.popularity}}</p>
   </div>
 </template>
 
@@ -18,7 +20,7 @@ export default {
 <style lang="scss">
 @keyframes modal-on{
     to{
-        top:100px;
+        top:50px;
     }
 }
 .modal-movie{
@@ -27,7 +29,6 @@ export default {
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 600px;
     padding: 30px;
     height: auto;
     background: var(--primary-color);
@@ -40,6 +41,21 @@ export default {
     }
     span{
         color: var(--primary-text);
+    }
+    p{
+        color:var(--destaque);
+    }
+
+    @media screen and (min-width:300px){
+        width: 95%;
+    }
+    
+    @media screen and (min-width:768px){
+        width: 85%;
+    }
+    
+    @media screen and (min-width:992px){
+        width: 60%;
     }
 }
 </style>
